@@ -1,0 +1,9 @@
+*.o
+
+main.c
+
+config.ini
+
+.vscode/
+
+main
