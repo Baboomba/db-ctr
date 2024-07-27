@@ -6,13 +6,16 @@ CFLAGS = -I/usr/include/python3.11 \
          -I/home/ansungeun/Documents/programming/.venv/base/lib/python3.11/site-packages/numpy/core/include \
 		 -I/usr/include \
 		 -I/usr/include/freetds \
-		 -I/usr/lib
+		 -I/usr/lib \
+		 -I/usr/local
 
 # 링크 옵션
 LDFLAGS = -lpython3.11 \
 		  -lmysqlclient \
 		  -lodbc \
-		  -L/usr/lib/x86_64-linux-gnu -lct
+		  -L/usr/lib/x86_64-linux-gnu \
+		  -lct \
+		  -ltdsodbc
 
 # 대상 파일 이름
 TARGET = main

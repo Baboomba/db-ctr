@@ -33,7 +33,7 @@ MYSQL* create_connection_mysql(DBInfo* info) {
     
     conn = mysql_real_connect(
         conn,
-        info->localhost,
+        info->host,
         info->user,
         info->password,
         info->database,

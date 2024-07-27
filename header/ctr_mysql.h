@@ -1,14 +1,9 @@
 #ifndef CTR_MYSQL_H
 #define CTR_MYSQL_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
-
+#include "db_info.h"
 #include <mysql/mysql.h>
 
-#include "db_info.h"
 
 bool check_connection_mysql(MYSQL* conn);
 bool check_execution_mysql(MYSQL* conn, int status);

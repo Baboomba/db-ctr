@@ -7,7 +7,7 @@
 #include <stdbool.h>
 
 typedef struct {
-    char localhost[16];
+    char host[16];
     char user[16];
     char password[16];
     char database[16];
@@ -15,5 +15,10 @@ typedef struct {
     char encoding[8];
     char driver[32];
 } DBInfo;
+
+typedef enum {
+    DB_MYSQL,
+    DB_MSSQL
+} DBType;
 
 #endif
