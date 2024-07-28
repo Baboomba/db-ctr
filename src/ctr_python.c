@@ -1,6 +1,5 @@
 #include "../header/ctr_python.h"
 
-unsigned short TABLE_DIMENSION = 2;
 
 static int map_types(enum enum_field_types mysql_type) {
     switch (mysql_type) {

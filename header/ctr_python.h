@@ -9,7 +9,7 @@
 #include <Python.h>
 #include <numpy/arrayobject.h>
 
-extern unsigned short TABLE_DIMENSION;
+#define TABLE_DIMENSION 2
 
 int map_types(enum enum_field_types mysql_type);
 int* get_field_types(MYSQL_RES* data);
