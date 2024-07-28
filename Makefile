@@ -15,13 +15,14 @@ LDFLAGS = -lpython3.11 \
 		  -lodbc \
 		  -L/usr/lib/x86_64-linux-gnu \
 		  -lct \
-		  -ltdsodbc
+		  
 
 # 대상 파일 이름
 TARGET = main
 
 # 소스 파일 목록
-SRCS = main.c src/ctr_mysql.c src/ctr_mssql.c
+# SRCS = main.c src/ctr_mysql.c src/ctr_mssql.c
+SRCS = main.c src/ctr_mysql.c
 
 # 기본 빌드 규칙
 all: $(TARGET)
